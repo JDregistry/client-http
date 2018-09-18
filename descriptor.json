@@ -18,7 +18,7 @@
   [
     {
       "includePattern": "build/libs/(.*)",
-      "uploadPattern": "jdregistry/client-http/0.0.4/$1",
+      "uploadPattern": "jdregistry/client/http/0.0.4/$1",
       "matrixParams": { "override": 1 }
     }
   ],
