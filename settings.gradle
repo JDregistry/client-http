@@ -1,0 +1,2 @@
+rootProject.name = 'http'
+enableFeaturePreview('STABLE_PUBLISHING')

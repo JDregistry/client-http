@@ -1,0 +1,26 @@
+{
+  "package": {
+    "name": "client-http",
+    "repo": "jdregistry",
+    "subject": "lukaszimmermann",
+    "labels": ["kotlin", "bintray", "gradle", "docker", "registry", "client", "http"],
+    "vcs_url": "https://github.com/JDregistry/client-http",
+    "licenses": ["MIT"]
+  },
+
+  "version": {
+    "name": "0.0.4",
+    "released": "2018-09-18",
+    "gpgSign": false
+  },
+
+  "files":
+  [
+    {
+      "includePattern": "build/libs/(.*)",
+      "uploadPattern": "jdregistry/client/0.0.4/$1",
+      "matrixParams": { "override": 1 }
+    }
+  ],
+  "publish": true
+}
