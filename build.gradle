@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'jdregistry.client'
-version '0.0.5'
+version '0.0.6'
 
 repositories {
     jcenter()
@@ -33,7 +33,7 @@ publishing {
     publications {
         maven(MavenPublication) {
             from components.java
-            version '0.0.5'
+            version '0.0.6'
             pom.withXml {
                 asNode().dependencies.'*'.findAll() {
                     it.scope.text() == 'runtime' && project.configurations.compile.allDependencies.find { dep ->
@@ -49,7 +49,7 @@ publishing {
 
 model {
     tasks.generatePomFileForMavenPublication {
-        destination = file("$buildDir/libs/http-0.0.5.pom")
+        destination = file("$buildDir/libs/http-0.0.6.pom")
     }
 }
 
